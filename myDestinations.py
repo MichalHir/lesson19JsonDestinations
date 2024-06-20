@@ -85,7 +85,7 @@ def search_part_word(my_arr):  # search for destinations that contain the expres
         ):
             if_contains = True
             index_of = index
-            print(index, item)
+            print(index, item["name"], item["description"], item["grade"])
     if if_contains == False:
         print("no search results\n")
 

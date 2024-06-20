@@ -28,6 +28,9 @@ def add_destination(my_arr, name, description, grade):  # adds destinations
 def edit_destination(my_arr):  # edits destinations
     list_destination(my_arr)
     index_edit = simple_search(my_arr)
+    while index_edit==-1:
+        print("the destination's name doesn't exist\n")
+        index_edit = simple_search(my_arr)
     destination_name = input("please enter new name of destination:\n")
     destination_description = input("please enter new description of destination:\n")
     destination_grade = input("please enter new grade of destination:\n")
@@ -88,7 +91,7 @@ def search_part_word(my_arr):  # search for destinations that contain the expres
         ):
             if_contains = True
             index_of = index
-            print(index, item)
+            print(index, item["name"], item["description"], item["grade"])
     if if_contains == False:
         print("no search results\n")
 
