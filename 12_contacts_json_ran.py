@@ -1,7 +1,7 @@
 import json
 
 
-FILE_NAME = 'contacts.json'
+FILE_NAME = 'menu.json'
 my_contacts = [
     ]
 # exmaple of array within array

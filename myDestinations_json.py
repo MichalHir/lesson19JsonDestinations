@@ -157,15 +157,15 @@ def load():
     global my_contacts
     try:
         with open(FILE_NAME, "r") as f:
-            my_contacts = json.load(f)
+            my_destinations = json.load(f)
     except:
         print("no file found. continuing..")
-        my_contacts = []
+        my_destinations = []
 
 
 def save():
     with open(FILE_NAME, "w") as f:  # f=open()
-        json.dump(my_contacts, f)
+        json.dump(my_destinations, f)
 
 
 def menu():  # menu
